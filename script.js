@@ -22,4 +22,19 @@ window.addEventListener('scroll', () => {
             section.classList.add('active');
         }
     });
+});
+
+// 微信二维码显示功能
+document.querySelector('.wechat-card').addEventListener('click', function() {
+    document.querySelector('.qrcode-modal').classList.add('show-modal');
+    document.querySelector('.modal-overlay').classList.add('show-modal');
+});
+
+// 关闭模态框
+document.querySelectorAll('.close-modal, .modal-overlay').forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelectorAll('.show-modal').forEach(el => {
+            el.classList.remove('show-modal');
+        });
+    });
 }); 

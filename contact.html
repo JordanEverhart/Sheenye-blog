@@ -25,24 +25,28 @@
                 <h2>联系方式</h2>
                 <div class="contact-links">
                     <!-- GitHub 卡片 -->
-                    <a href="https://github.com/你的用户名" target="_blank" class="contact-card">
+                    <a href="https://github.com/JordanEverhart" target="_blank" class="contact-card">
                         <div class="card-icon">💻</div>
                         <h3>GitHub 主页</h3>
                         <p>查看我的开源项目与代码仓库</p>
                     </a>
 
                     <!-- QQ 卡片 -->
-                    <a href="https://wpa.qq.com/msgrd?v=3&uin=你的QQ号&site=qq&menu=yes" target="_blank" class="contact-card">
+                    <a href="https://wpa.qq.com/msgrd?v=3&uin=2329149417&site=qq&menu=yes" target="_blank" class="contact-card">
                         <div class="card-icon">👥</div>
-                        <h3>QQ 联系方式</h3>
+                        <h3>QQ 联系</h3>
                         <p>点击添加好友即时沟通</p>
                     </a>
 
-                    <!-- 预留第三个联系方式 -->
-                    <div class="contact-card coming-soon">
-                        <div class="card-icon">📧</div>
-                        <h3>更多方式</h3>
-                        <p>其他联系方式筹备中...</p>
+                    <!-- 微信卡片 -->
+                    <div class="contact-card wechat-card">
+                        <div class="card-icon">📱</div>
+                        <h3>微信联系</h3>
+                        <p>点击显示二维码</p>
+                        <div class="qrcode-modal">
+                            <img src="微信二维码.jpg" alt="微信二维码">
+                            <span class="close-modal">&times;</span>
+                        </div>
                     </div>
                 </div>
                 <form>
@@ -63,6 +67,9 @@
             </div>
         </section>
     </main>
+
+    <!-- 在页面底部添加模态框样式 -->
+    <div class="modal-overlay"></div>
 
     <script src="nav.js"></script>
     <script src="script.js"></script>
